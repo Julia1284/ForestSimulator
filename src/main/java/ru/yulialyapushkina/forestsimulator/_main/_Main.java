@@ -9,5 +9,8 @@ public class _Main {
         EventSimulator eventSimulator = new EventSimulator();
 
         eventSimulator.sleepEvent(hare);
+        eventSimulator.eatBerries(hare);
+        eventSimulator.eatGrass(hare);
+        eventSimulator.eatTreeBark(hare);
     }
 }
