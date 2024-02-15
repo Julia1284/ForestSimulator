@@ -12,5 +12,9 @@ public class _Main {
         eventSimulator.eatBerries(hare);
         eventSimulator.eatGrass(hare);
         eventSimulator.eatTreeBark(hare);
+        eventSimulator.run(hare);
+        eventSimulator.hunterAttack(hare);
+        eventSimulator.wolfAttack(hare);
+        eventSimulator.foxAttack(hare);
     }
 }

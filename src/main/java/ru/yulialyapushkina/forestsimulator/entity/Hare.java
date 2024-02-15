@@ -2,9 +2,9 @@ package ru.yulialyapushkina.forestsimulator.entity;
 
 public class Hare {
 
-    private int healthPoint = 20;
+    private int healthPoint = 100;
 
-    private int energyPoint = 20;
+    private int energyPoint = 100;
 
 
 
