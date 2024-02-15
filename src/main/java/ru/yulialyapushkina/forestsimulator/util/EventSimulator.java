@@ -12,7 +12,7 @@ public class EventSimulator {
     // напала лиса -20 энергии  - 20 здоровья
     // напал охотник -20 энергии - 40 здоровья
     // поиск еды - 10 энергии
-    // сидит в укрытии + 10 энергии
+    // сидит в укрытии + 10 энергии здоровье +10
 
     public int checkEnergy(int energy) {
         if (energy > 100) {
@@ -133,4 +133,30 @@ public class EventSimulator {
         System.out.println("На зайца напала лиса");
         energyWriterService(hare.getEnergyPoint(), hare.getHealthPoint());
     }
+
+    public void searchFood (Hare hare){
+        int energyPoint = hare.getEnergyPoint();
+        energyPoint = energyPoint - 10;
+        energyPoint = checkEnergy(energyPoint);
+        hare.setEnergyPoint(energyPoint);
+        System.out.println("Заяц ищет еду.");
+        energyWriterService(hare.getEnergyPoint(), hare.getHealthPoint());
+    }
+
+    public void sitInShelter (Hare hare){
+        int energyPoint = hare.getEnergyPoint();
+        int healthPoint = hare.getHealthPoint();
+        energyPoint = energyPoint + 10;
+        energyPoint = checkEnergy(energyPoint);
+        healthPoint = healthPoint + 10;
+        healthPoint = checkHealth(healthPoint);
+        hare.setEnergyPoint(energyPoint);
+        hare.setHealthPoint(healthPoint);
+        System.out.println("Заяц сидит в укрытии");
+        energyWriterService(hare.getEnergyPoint(), hare.getHealthPoint());
+    }
+
+
+
+
 }

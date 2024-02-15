@@ -16,5 +16,7 @@ public class _Main {
         eventSimulator.hunterAttack(hare);
         eventSimulator.wolfAttack(hare);
         eventSimulator.foxAttack(hare);
+        eventSimulator.searchFood(hare);
+        eventSimulator.sitInShelter(hare);
     }
 }
