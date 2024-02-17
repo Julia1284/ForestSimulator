@@ -1,13 +1,8 @@
 package ru.yulialyapushkina.forestsimulator.entity;
 
 public class Hare {
-
     private int healthPoint = 100;
-
     private int energyPoint = 100;
-
-
-
     private final double SATURATION_BERRIES = 2.5;
     private final double SATURATION_GRASS = 3.3;
     private final double SATURATION_TREE_BARK = 1.8;
@@ -32,7 +27,6 @@ public class Hare {
         return SATURATION_BERRIES;
     }
 
-
     public double getSATURATION_GRASS() {
         return SATURATION_GRASS;
     }
@@ -40,5 +34,4 @@ public class Hare {
     public double getSATURATION_TREE_BARK() {
         return SATURATION_TREE_BARK;
     }
-
 }
