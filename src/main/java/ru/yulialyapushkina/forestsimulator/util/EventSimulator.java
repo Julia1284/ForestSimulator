@@ -23,7 +23,7 @@ public class EventSimulator {
                 throw new RuntimeException(e);
             }
             if (eventRandomizer >= 0 && eventRandomizer < 20) {
-                sleepEvent(hare);
+                sleep(hare);
             } else if (eventRandomizer >= 20 && eventRandomizer < 30) {
                 eatBerries(hare);
             } else if (eventRandomizer >= 30 && eventRandomizer < 40) {
@@ -74,7 +74,7 @@ public class EventSimulator {
         System.out.println("Энергия " + energy + ", здоровье " + health);
     }
 
-    private void sleepEvent(Hare hare) {
+    private void sleep(Hare hare) {
         int energyPoint = hare.getEnergyPoint();
         energyPoint = energyPoint + 30;
         hare.setEnergyPoint(energyPoint);
