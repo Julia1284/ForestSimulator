@@ -35,7 +35,7 @@ public class EventSimulator {
             } else if (eventRandomizer >= 55 && eventRandomizer < 65) {
                 attackByWolf(hare);
             } else if (eventRandomizer >= 65 && eventRandomizer < 75) {
-                attackFox(hare);
+                attackByFox(hare);
             } else if (eventRandomizer >= 75 && eventRandomizer < 85) {
                 attackByHunter(hare);
             } else if (eventRandomizer >= 85 && eventRandomizer < 95) {
@@ -157,7 +157,7 @@ public class EventSimulator {
         energyWriterService(hare.getEnergyPoint(), hare.getHealthPoint());
     }
 
-    private void attackFox(Hare hare) {
+    private void attackByFox(Hare hare) {
         int energyPoint = hare.getEnergyPoint();
         int healthPoint = hare.getHealthPoint();
         energyPoint = energyPoint - 20;
